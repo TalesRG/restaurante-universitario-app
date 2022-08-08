@@ -10,7 +10,7 @@ function NavBar(){
         </button>
         <div className="collapse navbar-collapse" id="navbarResponsive">
           <ul className="navbar-nav">
-          <NavBarItem href="#/" label ="Home"></NavBarItem>
+          <NavBarItem href="#/home" label ="Home"></NavBarItem>
           <li className="nav-item" >
             <a className="nav-link" href="#/login" style={{position:'relative' , left: '800px'}}>Login</a>
           </li>
