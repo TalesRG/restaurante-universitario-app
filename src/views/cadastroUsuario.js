@@ -2,7 +2,10 @@ import React from "react";
 import Card from "../componentes/card";
 import FormGroup from "../componentes/form-group";
 import { withRouter } from "react-router-dom";
-   
+import NavBar from "../componentes/navbar";
+import UsuarioService from "../app/service/usuarioService";
+import {mensagemErro, mensagemSucesso} from "../componentes/toastr";
+
 
 class CadastroUsuario extends React.Component{
     state = {
@@ -12,9 +15,23 @@ class CadastroUsuario extends React.Component{
         senha: '',
         senhaRepeticao : ''
     }
-    
+    constructor() {
+        super();
+        this.service = new UsuarioService();
+    }
     cadastrar = () => {
-        console.log(this.state)
+        const usuario = {
+            nome : this.state.nome,
+            email: this.state.email,
+            matricula: this.state.matricula,
+            senha: this.state.senha
+        }
+        this.service.salvar(usuario).then(response => {
+            mensagemSucesso('Usuario cadastrado com sucesso!')
+            this.props.history.push('/login')
+        }).catch(error => {
+            mensagemErro(error.response.data);
+        })
     }
     cancelar = () =>{
         this.props.history.push('/login')
@@ -23,7 +40,8 @@ class CadastroUsuario extends React.Component{
     render(){
            
         return(
-           
+           <>
+               <NavBar></NavBar>
             <Card title ="Cadatro de Usuário">
                 <div className="row">
                     <div className="col-lg-12">
@@ -82,8 +100,8 @@ class CadastroUsuario extends React.Component{
                 </div>
             </div>
             </Card>
-           
-            
+
+           </>
         )
         
     }
