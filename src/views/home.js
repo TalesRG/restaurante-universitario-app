@@ -1,8 +1,7 @@
 import React from "react";
 import {withRouter} from 'react-router-dom'; 
 import { Carousel } from 'react-carousel-minimal';
-import CardHome from '../componentes/cardHome';
-import '../cardHome.css';
+
 
 class Home extends React.Component{
     entrar = () => {
@@ -37,6 +36,9 @@ class Home extends React.Component{
               }
         return (
                 <div className="App">
+
+
+
                 
                   <div style={{ textAlign: "center" }}>
                     <h1>Bem-vindo ao Restaurante Universitário!</h1>
@@ -73,13 +75,86 @@ class Home extends React.Component{
                       />
                     </div>
                   </div>
-                       <CardHome title="Login">
-                
-                
-                          </CardHome>
-                      </div>
-    
-              );
+                  <div className="container marketing">
+
+          <div className="row">
+            <div className="col-lg-4">
+              <img className="bd-placeholder-img rounded-circle" width="140" height="140" src="https://schippers.com.br/wp-content/uploads/2020/03/cadastro.png"></img>
+              <h2 className="fw-normal">Cadastrar</h2>
+              <p>Faça já o seu cadastro gratuitamente!</p>
+              <p><a className="button" href="#/cadastro-usuario">Cadastrar &raquo;</a></p>
+            </div>
+            <div className="col-lg-4">
+              <img className="bd-placeholder-img rounded-circle" width="140" height="140" src="https://cdn-icons-png.flaticon.com/512/17/17547.png"></img>
+
+              <h2 className="fw-normal">Login</h2>
+              <p>Caso já possua uma conta, faça o seu login e aproveite os benefícios!</p>
+              <p><a className="button" href="#/login">Login &raquo;</a></p>
+            </div>
+            <div className="col-lg-4">
+              <img className="bd-placeholder-img rounded-circle" width="140" height="140" src="https://cdn-icons-png.flaticon.com/512/1243/1243557.png"></img>
+
+              <h2 className="fw-normal">Sobre o RU</h2>
+              <p>Clique em saiba mais e conheça a história do Restaurante Universitário da UnB-FGA!</p>
+              <p><a className="button" href="#/historia">Saiba mais &raquo;</a></p>
+            </div>
+          </div>
+          </div>
+        
+
+              <hr className="featurette-divider"/>
+
+              <div className="row featurette">
+                <div className="col-md-7">
+                  <h2 className="featurette-heading fw-normal lh-1">Controle seus gastos!</h2>
+                  <p className="lead">Agora você pode realizar o controle de suas recargas e de quanto foi gasto.</p>
+                </div>
+                <div className="col-md-5">
+                  <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="https://pbs.twimg.com/media/Eft_8JTXsAA9ZjD.jpg"></img>
+
+                </div>
+              </div>
+
+              <hr className="featurette-divider"/>
+
+              <div className="row featurette">
+                <div className="col-md-7 order-md-2">
+                  <h2 className="featurette-heading fw-normal lh-1">Tenha acesso ao cardápio da semana!</h2>
+                  <p className="lead">Por meio do Restaurante Universitario Manager é possível acessar o cardápio oficial da Universidade de Brasília.</p>
+                </div>
+                <div className="col-md-5 order-md-1">
+                  <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="https://i0.wp.com/gamacidadao.com.br/wp-content/uploads/2014/04/unb-gama.jpg?fit=600%2C399&ssl=1"></img>
+
+                </div>
+              </div>
+
+              <hr className="featurette-divider"/>
+
+              <div className="row featurette">
+                <div className="col-md-7">
+                  <h2 className="featurette-heading fw-normal lh-1">Histórico de compra!</h2>
+                  <p className="lead">Tenha acesso ao seu histórico a partir da data que você escolher.</p>
+                </div>
+                <div className="col-md-5">
+                  <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="http://www.noticias.unb.br/images/Noticias/2017/02-Fev/18Set2012_FGA_EduLauton.jpg"></img>
+
+                </div>
+              </div>
+
+              <hr className="featurette-divider"/>
+
+              
+              <footer className="container">
+              <p className="float-end"><a href="#/home">Voltar ao topo</a></p>
+              <p>&copy; 2022 Branco Flor de Lótus, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+              </footer>
+          
+                        
+                        
+              <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+              
+              </div>
+        )
     }
 }
 export default withRouter(Home)

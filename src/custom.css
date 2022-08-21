@@ -4,3 +4,9 @@ button{
     margin: 5px;
 }
 
+.fw-normal{
+    color: black;
+}
+.btn-secondary{
+    color: rgb(0, 255, 85);
+}
