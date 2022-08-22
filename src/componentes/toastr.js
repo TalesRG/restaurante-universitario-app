@@ -9,7 +9,7 @@ toastr.options = {
     "onclick": null,
     "showDuration": "300",
     "hideDuration": "1000",
-    "timeOut": "1000",
+    "timeOut": "2000",
     "extendedTimeOut": "1000",
     "showEasing": "swing",
     "hideEasing": "linear",
@@ -21,10 +21,10 @@ export function mostrarMensagem(titulo,msg,tipo){
     toastr[tipo](msg,titulo);
 }
 
-export function mensagemErro(msg){
-    mostrarMensagem('Erro',msg,'error')
+export function mensagemErro(mensagem){
+    mostrarMensagem('Erro',mensagem,'error')
 }
 
-export function mensagemSucesso(msg){
-    mostrarMensagem('Sucesso',msg,'success')
+export function mensagemSucesso(mensagem){
+    mostrarMensagem('Sucesso',mensagem,'success')
 }
