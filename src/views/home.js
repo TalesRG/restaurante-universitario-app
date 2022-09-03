@@ -41,9 +41,10 @@ class Home extends React.Component{
 
                 
                   <div style={{ textAlign: "center" }}>
-                    <h1>Bem-vindo ao Restaurante Universitário!</h1>
+                    <h1><strong>Bem-vindo ao Restaurante Universitário!</strong></h1>
 
-                    <p>Fique atualizado com o cardápio da semana e gerencie seus gastos</p>
+
+                      <p>Fique atualizado com o cardápio da semana e gerencie seus gastos</p>
                     <div style={{
                       padding: "0 20px"
                     }}>
