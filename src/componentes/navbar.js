@@ -12,10 +12,13 @@ function NavBar(){
           <ul className="navbar-nav">
           <NavBarItem href="#/home" label ="Home"></NavBarItem>
           <li className="nav-item" >
-            <a className="nav-link" href="#/login" style={{position:'relative' , left: '800px'}}>Login</a>
+            <a className="nav-link" href="#/login" style={{position:'relative' , left: '595px'}}>Login</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#/cadastro-usuario" style={{position:'relative' , left: '805px'}} >Cadastrar</a>
+            <a className="nav-link" href="#/cadastro-usuario" style={{position:'relative' , left: '600px'}} >Cadastrar</a>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#/ru-recarga" style={{position:'relative' , left: '605px'}} >Recarregar</a>
           </li>
         </ul>
 
