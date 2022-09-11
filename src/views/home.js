@@ -147,8 +147,7 @@ class Home extends React.Component{
 
               
               <footer className="container">
-              <p className="float-end"><a href="#/home">Voltar ao topo</a></p>
-              <p>&copy; 2022 Branco Flor de Lótus, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+              <p>&copy; 2022 Branco Flor de Lótus, Inc.</p>
               </footer>
           
                         
