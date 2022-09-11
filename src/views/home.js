@@ -96,7 +96,7 @@ class Home extends React.Component{
 
               <h2 className="fw-normal">Sobre o RU</h2>
               <p>Clique em saiba mais e conheça a história do Restaurante Universitário da UnB-FGA!</p>
-              <p><a className="button" href="#/historia">Saiba mais &raquo;</a></p>
+              <p><a className="button" href="#/sobre-o-ru">Saiba mais &raquo;</a></p>
             </div>
           </div>
           </div>
@@ -121,6 +121,7 @@ class Home extends React.Component{
                 <div className="col-md-7 order-md-2">
                   <h2 className="featurette-heading fw-normal lh-1">Tenha acesso ao cardápio da semana!</h2>
                   <p className="lead">Por meio do Restaurante Universitario Manager é possível acessar o cardápio oficial da Universidade de Brasília.</p>
+                  <a href="https://ru.unb.br/images/Artigos/ISMCARDAPIOSRU2022/9SETEMBRO2022/Gama_-_Semana_03_-_0509_a_1109.pdf" target="_blank">Cardápio</a>
                 </div>
                 <div className="col-md-5 order-md-1">
                   <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="https://i0.wp.com/gamacidadao.com.br/wp-content/uploads/2014/04/unb-gama.jpg?fit=600%2C399&ssl=1"></img>
@@ -134,6 +135,7 @@ class Home extends React.Component{
                 <div className="col-md-7">
                   <h2 className="featurette-heading fw-normal lh-1">Histórico de compra!</h2>
                   <p className="lead">Tenha acesso ao seu histórico a partir da data que você escolher.</p>
+                  
                 </div>
                 <div className="col-md-5">
                   <img className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" src="http://www.noticias.unb.br/images/Noticias/2017/02-Fev/18Set2012_FGA_EduLauton.jpg"></img>
