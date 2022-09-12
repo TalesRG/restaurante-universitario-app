@@ -3,7 +3,7 @@ import Home from "../views/home";
 import Login from "../views/login";
 import CadastroUsuario from "../views/cadastroUsuario";
 import RestauranteRecarga from "../views/restaurante-recarga";
-import {Route,Switch,HashRouter} from 'react-router-dom'
+import {Route,Switch,HashRouter} from 'react-router-dom';
 
 
 function Rotas(){
