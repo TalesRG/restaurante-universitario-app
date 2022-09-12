@@ -36,9 +36,6 @@ class Home extends React.Component{
               }
         return (
                 <div className="App">
-
-
-
                 
                   <div style={{ textAlign: "center" }}>
                     <h1><strong>Bem-vindo ao Restaurante Universitário!</strong></h1>
