@@ -17,9 +17,7 @@ function NavBar(){
           <li className="nav-item">
             <a className="nav-link" href="#/cadastro-usuario" style={{position:'relative' , left: '600px'}} >Cadastrar</a>
           </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#/ru-recarga" style={{position:'relative' , left: '605px'}} >Recarregar</a>
-          </li>
+
         </ul>
 
         </div>

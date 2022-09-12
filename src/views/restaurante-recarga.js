@@ -1,5 +1,4 @@
 import React from "react";
-import "../cardRecarga.css";
 import imgcafe from "../componentes/imgcafe.png"
 import imgalmoço from "../componentes/imgalmoço.png"
 import imgjanta from "../componentes/imgjanta.png"
